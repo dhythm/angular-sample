@@ -1,1 +1,14 @@
-<p>consulting-list works!</p>
+<div>
+  <mat-card *ngFor="let item of items">
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <p *ngFor="let content of getLineBreak(item.content)">{{ content }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button color="primary">
+        See detail
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
