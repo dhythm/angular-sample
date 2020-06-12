@@ -9,14 +9,17 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultingDetailComponent } from './consulting-detail/consulting-detail.component';
 import { ConsultingListComponent } from './consulting-list/consulting-list.component';
-import { FabComponent } from './fab/fab.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { DrawerMenuComponent } from './drawer-menu/drawer-menu.component';
+import { FabComponent } from './fab/fab.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,7 @@ import { DialogComponent } from './dialog/dialog.component';
     FabComponent,
     ConsultingDetailComponent,
     DialogComponent,
+    DrawerMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { DialogComponent } from './dialog/dialog.component';
     MatInputModule,
     MatCheckboxModule,
     MatDialogModule,
+    MatSidenavModule,
+    MatListModule,
     FlexLayoutModule,
   ],
   providers: [],
