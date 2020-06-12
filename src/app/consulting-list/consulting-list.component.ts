@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  Category,
+  ConsultingCategoryService,
+} from '../consulting-category.service';
 
 @Component({
   selector: 'app-consulting-list',
@@ -6,25 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulting-list.component.css'],
 })
 export class ConsultingListComponent implements OnInit {
-  items: any[];
+  items: Category[];
 
-  constructor() {}
+  constructor(private consultingCategoryService: ConsultingCategoryService) {}
 
   ngOnInit(): void {
-    this.items = [
-      {
-        title: 'Title1',
-        content: `Content1\nhoge`,
-      },
-      {
-        title: 'Title2',
-        content: 'Content2',
-      },
-      {
-        title: 'Title3',
-        content: 'Content3',
-      },
-    ];
+    this.items = this.consultingCategoryService.getCategories();
   }
 
   getLineBreak(string): string {

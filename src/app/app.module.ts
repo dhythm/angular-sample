@@ -10,9 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultingListComponent } from './consulting-list/consulting-list.component';
 import { FabComponent } from './fab/fab.component';
+import { ConsultingDetailComponent } from './consulting-detail/consulting-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, ConsultingListComponent, FabComponent],
+  declarations: [AppComponent, ConsultingListComponent, FabComponent, ConsultingDetailComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

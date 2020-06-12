@@ -18,3 +18,8 @@ ng add @angular/material
 ```
 ng g component NAME
 ```
+
+## Add a service
+```
+ng g service NAME
+```
