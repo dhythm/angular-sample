@@ -1,1 +1,25 @@
-<p>consulting-detail works!</p>
+<form
+  class="example-form"
+  [formGroup]="consultingForm"
+  (ngSubmit)="onSubmit(consultingForm.value)"
+>
+  <mat-form-field class="example-full-width">
+    <mat-label>Content</mat-label>
+    <textarea
+      matInput
+      rows="5"
+      [formControl]="contentControl"
+      placeholder="Please fill out your issue."
+    ></textarea>
+  </mat-form-field>
+  <p>
+    Please check our privacy policy for dealing with personal information.
+    <br />
+    And please confirm the checkbox.
+  </p>
+  <mat-checkbox formControlName="checkbox" color="primary"
+    >I accept the privacy policy</mat-checkbox
+  >
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>
