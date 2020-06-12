@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
 import { ConsultingDetailComponent } from './consulting-detail/consulting-detail.component';
 import { ConsultingListComponent } from './consulting-list/consulting-list.component';
 import { FabComponent } from './fab/fab.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { FabComponent } from './fab/fab.component';
     ConsultingListComponent,
     FabComponent,
     ConsultingDetailComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { FabComponent } from './fab/fab.component';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    MatDialogModule,
     FlexLayoutModule,
   ],
   providers: [],
