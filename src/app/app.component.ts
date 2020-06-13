@@ -8,10 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-sample';
 
-  opened = false;
+  private opened: boolean;
 
-  onToggleSidenav(): void {
+  ngOnInit() {
+    this.opened = false;
+  }
+
+  onReceiveEventFromChild(eventData: String) {
+    console.log({ eventData });
     this.opened = !this.opened;
-    console.log('clicked!');
   }
 }

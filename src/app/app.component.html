@@ -1,23 +1,11 @@
 <mat-drawer-container class="example-container">
   <mat-drawer mode="over" [(opened)]="opened"
-    ><app-drawer-menu></app-drawer-menu
+    ><app-drawer-menu
+      (event)="onReceiveEventFromChild($event)"
+    ></app-drawer-menu
   ></mat-drawer>
   <mat-drawer-content>
-    <div class="toolbar">
-      <div style="width: 100%;" fxLayout="row" fxLayoutAlign="space-between">
-        <div style="width: 40px; text-align: center;">
-          <button mat-icon-button (click)="onToggleSidenav()">
-            <mat-icon>menu</mat-icon>
-          </button>
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content: center;"
-        >
-          Angular Sample
-        </div>
-        <div style="width: 40px;"></div>
-      </div>
-    </div>
+    <app-navbar (event)="onReceiveEventFromChild($event)"></app-navbar>
 
     <div class="content" role="main">
       <router-outlet></router-outlet>

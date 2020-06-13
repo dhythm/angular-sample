@@ -20,6 +20,7 @@ import { ConsultingListComponent } from './consulting-list/consulting-list.compo
 import { DialogComponent } from './dialog/dialog.component';
 import { DrawerMenuComponent } from './drawer-menu/drawer-menu.component';
 import { FabComponent } from './fab/fab.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FabComponent } from './fab/fab.component';
     ConsultingDetailComponent,
     DialogComponent,
     DrawerMenuComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
