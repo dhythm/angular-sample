@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-sample';
-
-  private opened: boolean;
+  opened: boolean;
 
   ngOnInit() {
     this.opened = false;
