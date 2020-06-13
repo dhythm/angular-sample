@@ -260,3 +260,7 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+.mat-drawer-container {
+  min-height: 100vh;
+}
