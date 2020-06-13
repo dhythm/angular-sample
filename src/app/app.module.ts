@@ -21,6 +21,8 @@ import { DialogComponent } from './dialog/dialog.component';
 import { DrawerMenuComponent } from './drawer-menu/drawer-menu.component';
 import { FabComponent } from './fab/fab.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ConsultationsComponent } from './consultations/consultations.component';
+import { ConsultantComponent } from './consultant/consultant.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     DialogComponent,
     DrawerMenuComponent,
     NavbarComponent,
+    ConsultationsComponent,
+    ConsultantComponent,
   ],
   imports: [
     BrowserModule,
