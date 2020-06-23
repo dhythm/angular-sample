@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -19,6 +19,13 @@ export class ConsultingDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  @HostListener('window:beforeunload', ['$event'])
+  beforeUnloadHandler(event) {
+    // Before moving to another page
+    const performanceEntries = performance.getEntriesByType('navigation');
+    console.log('beforeunload: ' + performanceEntries[0]['type']);
+  }
 
   onSubmit(data): void {
     this.consultingForm.reset();
